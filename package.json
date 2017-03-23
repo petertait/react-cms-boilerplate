@@ -1,0 +1,23 @@
+{
+  "name": "react-cms-boilerplate",
+  "author": "Peter Tait",
+  "version": "1.0.0",
+  "description": "Boilerplate for a React based website with a CMS",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petertait/react-cms-boilerplate.git"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "now"
+  },
+  "dependencies": {
+    "next": "^2.0.0-beta.39",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "styled-components": "^1.4.4"
+  }
+}
