@@ -778,13 +778,9 @@ babylon@6.14.1:
   version "6.14.1"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.14.1.tgz#956275fab72753ad9b3435d7afe58f8bf0a29815"
 
-babylon@6.15.0:
+babylon@6.15.0, babylon@^6.11.0, babylon@^6.15.0:
   version "6.15.0"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.15.0.tgz#ba65cfa1a80e1759b0e89fb562e27dccae70348e"
-
-babylon@^6.11.0, babylon@^6.15.0:
-  version "6.16.1"
-  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.16.1.tgz#30c5a22f481978a9e7f8cdfdf496b11d94b404d3"
 
 balanced-match@^0.4.1:
   version "0.4.2"
@@ -1763,7 +1759,7 @@ interpret@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.1.tgz#d579fb7f693b858004947af39fa0db49f795602c"
 
-invariant@^2.2.0:
+invariant@^2.2.0, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
   dependencies:
@@ -2559,7 +2555,7 @@ pretty-format@^19.0.0:
   dependencies:
     ansi-styles "^3.0.0"
 
-prismic.io@^3.5.4:
+prismic.io@^3.3.1, prismic.io@^3.5.4:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/prismic.io/-/prismic.io-3.5.4.tgz#0cb0cca76b10e26425bf543e569dbfb35729045b"
 
@@ -2680,6 +2676,13 @@ react-hot-loader@3.0.0-beta.6:
     react-proxy "^3.0.0-alpha.0"
     redbox-react "^1.2.5"
     source-map "^0.4.4"
+
+react-prismic-hocs@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/react-prismic-hocs/-/react-prismic-hocs-0.2.1.tgz#31b300b9bf92df541ab55cc356733e5f54b77a3f"
+  dependencies:
+    invariant "^2.2.2"
+    prismic.io "^3.3.1"
 
 react-proxy@^3.0.0-alpha.0:
   version "3.0.0-alpha.1"

@@ -36,10 +36,6 @@ var _link = require('next/dist/lib/link.js');
 
 var _link2 = _interopRequireDefault(_link);
 
-var _prismic = require('../api/prismic');
-
-var _prismic2 = _interopRequireDefault(_prismic);
-
 var _header = require('../components/header');
 
 var _header2 = _interopRequireDefault(_header);
@@ -68,30 +64,30 @@ var _class = function (_React$Component) {
       return _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 18
         }
       }, _react2.default.createElement(_head2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 19
         }
       }, _react2.default.createElement('title', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 20
         }
       }, 'About')), _react2.default.createElement(_header2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 22
         }
       }, _react2.default.createElement(_link2.default, { href: '/', __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 23
         }
       }, 'Home'), _react2.default.createElement(_link2.default, { href: '/about', __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 24
         }
       }, 'About')));
     }

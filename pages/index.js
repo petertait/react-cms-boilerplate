@@ -2,8 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Prismic from '../api/prismic'
-
 import Header from '../components/header'
 
 export default class extends React.Component {
