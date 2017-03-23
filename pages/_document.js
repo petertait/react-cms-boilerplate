@@ -1,6 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import styleSheet from 'styled-components/lib/models/StyleSheet'
-import { injectGlobal } from 'styled-components';
+import { injectGlobal } from 'styled-components'
 
 injectGlobal`
 	@font-face {
@@ -27,6 +27,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <title>React CMS Boilerplate</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <body>
           <injectGlobal>

@@ -18,7 +18,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  background: red;\n'], ['\n  background: red;\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  background: grey;\n  padding: 20px;\n'], ['\n  background: grey;\n  padding: 20px;\n']);
 
 var Header = _styledComponents2.default.header(_templateObject);
 

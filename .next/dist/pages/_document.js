@@ -89,25 +89,29 @@ var MyDocument = function (_Document) {
           fileName: _jsxFileName,
           lineNumber: 29
         }
-      }, 'React CMS Boilerplate')), _react2.default.createElement('body', {
-        __source: {
+      }, 'React CMS Boilerplate'), _react2.default.createElement('meta', { name: 'viewport', content: 'initial-scale=1.0, width=device-width', __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 30
         }
-      }, _react2.default.createElement('injectGlobal', {
+      })), _react2.default.createElement('body', {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 32
         }
-      }, _react2.default.createElement(_document.Main, {
+      }, _react2.default.createElement('injectGlobal', {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33
         }
-      }), _react2.default.createElement(_document.NextScript, {
+      }, _react2.default.createElement(_document.Main, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34
+        }
+      }), _react2.default.createElement(_document.NextScript, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
         }
       }))));
     }
