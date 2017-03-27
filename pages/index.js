@@ -1,4 +1,6 @@
 import React from 'react'
+import Prismic from 'prismic.io'
+import { DocumentById } from 'react-prismic-hocs'
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -15,15 +17,18 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div>
-        <Head>
-          <title>About</title>
-        </Head>
-        <Header>
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-        </Header>
-      </div>
+      <DocumentById
+        url={'https://react-cms-boilerplate.prismic.io/api'}
+        id={'home'}
+      >
+        {({loading, prismic, error}) => (
+          <div>
+            {!loading && prismic &&
+              <div>{prismic.data['title']}</div>
+            }
+          </div>
+        )}
+      </DocumentById>
     )
   }
 }

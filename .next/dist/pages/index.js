@@ -28,6 +28,12 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _prismic = require('prismic.io');
+
+var _prismic2 = _interopRequireDefault(_prismic);
+
+var _reactPrismicHocs = require('react-prismic-hocs');
+
 var _head = require('next/dist/lib/head.js');
 
 var _head2 = _interopRequireDefault(_head);
@@ -61,35 +67,29 @@ var _class = function (_React$Component) {
   (0, _createClass3.default)(_class, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('div', {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        }
-      }, _react2.default.createElement(_head2.default, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        }
-      }, _react2.default.createElement('title', {
+      return _react2.default.createElement(_reactPrismicHocs.DocumentById, {
+        url: 'https://react-cms-boilerplate.prismic.io/api',
+        id: 'home',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
         }
-      }, 'About')), _react2.default.createElement(_header2.default, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        }
-      }, _react2.default.createElement(_link2.default, { href: '/', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        }
-      }, 'Home'), _react2.default.createElement(_link2.default, { href: '/about', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        }
-      }, 'About')));
+      }, function (_ref) {
+        var loading = _ref.loading,
+            prismic = _ref.prismic,
+            error = _ref.error;
+        return _react2.default.createElement('div', {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25
+          }
+        }, !loading && prismic && _react2.default.createElement('div', {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27
+          }
+        }, prismic.data['title']));
+      });
     }
   }]);
 

@@ -1,6 +1,6 @@
 webpackHotUpdate(4,{
 
-/***/ 569:
+/***/ 624:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34,15 +34,21 @@ var _react = __webpack_require__(18);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _prismic = __webpack_require__(581);
+
+var _prismic2 = _interopRequireDefault(_prismic);
+
+var _reactPrismicHocs = __webpack_require__(591);
+
 var _head = __webpack_require__(234);
 
 var _head2 = _interopRequireDefault(_head);
 
-var _link = __webpack_require__(565);
+var _link = __webpack_require__(580);
 
 var _link2 = _interopRequireDefault(_link);
 
-var _header = __webpack_require__(566);
+var _header = __webpack_require__(590);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -67,35 +73,29 @@ var _class = function (_React$Component) {
   (0, _createClass3.default)(_class, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('div', {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        }
-      }, _react2.default.createElement(_head2.default, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        }
-      }, _react2.default.createElement('title', {
+      return _react2.default.createElement(_reactPrismicHocs.DocumentById, {
+        url: 'https://react-cms-boilerplate.prismic.io/api',
+        id: 'home',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
         }
-      }, 'About')), _react2.default.createElement(_header2.default, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        }
-      }, _react2.default.createElement(_link2.default, { href: '/', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        }
-      }, 'Home'), _react2.default.createElement(_link2.default, { href: '/about', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        }
-      }, 'About')));
+      }, function (_ref) {
+        var loading = _ref.loading,
+            prismic = _ref.prismic,
+            error = _ref.error;
+        return _react2.default.createElement('div', {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25
+          }
+        }, !loading && prismic && _react2.default.createElement('div', {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27
+          }
+        }, prismic.data['title']));
+      });
     }
   }]);
 
@@ -133,4 +133,4 @@ exports.default = _class;
 /***/ })
 
 })
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcz9mMjM5Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQU87Ozs7QUFDQTs7OztBQUNBOzs7O0FBRVk7Ozs7Ozs7Ozs7a0NBR2pCOztBQUNBO0FBQ0E7QUFFQTs7a0JBQWEsT0FBTzt3Q0FBQTs7aUlBRW5COzs7Ozs2QkFHQzs2QkFDRTs7b0JBQUE7c0JBQ0U7QUFERjtBQUFBLHlCQUNHOztvQkFBRDtzQkFDRTtBQURGO0FBQUEseUJBQ0U7O29CQUFBO3NCQUFBO0FBQUE7QUFBQSxTQUVGLDJCQUFDOztvQkFBRDtzQkFDRTtBQURGO0FBQUEseUJBQ0csZ0NBQUssTUFBSztvQkFBWDtzQkFBQTtBQUFBO1NBQ0EseUJBQUMsZ0NBQUssTUFBSztvQkFBWDtzQkFBQTtBQUFBO1NBSVA7Ozs7O0VBckIwQixnQkFBTSIsImZpbGUiOiI0LmZkNTJkOTQyMTU5ZWE1ODE3ODZmLmhvdC11cGRhdGUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXG5cbmltcG9ydCBIZWFkZXIgZnJvbSAnLi4vY29tcG9uZW50cy9oZWFkZXInXG5cbmV4cG9ydCBkZWZhdWx0IGNsYXNzIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgLy8gc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcyAoKSB7XG4gIC8vXG4gIC8vIH1cblxuICBjb25zdHJ1Y3RvciAocHJvcHMpIHtcbiAgICBzdXBlcihwcm9wcylcbiAgfVxuXG4gIHJlbmRlcigpIHtcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdj5cbiAgICAgICAgPEhlYWQ+XG4gICAgICAgICAgPHRpdGxlPkFib3V0PC90aXRsZT5cbiAgICAgICAgPC9IZWFkPlxuICAgICAgICA8SGVhZGVyPlxuICAgICAgICAgIDxMaW5rIGhyZWY9XCIvXCI+SG9tZTwvTGluaz5cbiAgICAgICAgICA8TGluayBocmVmPVwiL2Fib3V0XCI+QWJvdXQ8L0xpbms+XG4gICAgICAgIDwvSGVhZGVyPlxuICAgICAgPC9kaXY+XG4gICAgKVxuICB9XG59XG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9wYWdlcz9lbnRyeSJdLCJzb3VyY2VSb290IjoiIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcz9mMjM5Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQU87Ozs7QUFDQTs7OztBQUNFOztBQUNGOzs7O0FBQ0E7Ozs7QUFFWTs7Ozs7Ozs7OztrQ0FHakI7O0FBQ0E7QUFDQTtBQUVBOztrQkFBYSxPQUFPO3dDQUFBOztpSUFFbkI7Ozs7OzZCQUdDOzZCQUNHO2FBRUM7WUFBSTs7b0JBRk47c0JBSUc7QUFKSDtBQUNFLE9BREYsa0JBSUc7WUFBRTtZQUFTO1lBQVM7K0JBQ25COztzQkFBQTt3QkFDRztBQURIO0FBQUEsWUFDSSxXQUFXLDJCQUNYOztzQkFBQTt3QkFBTTtBQUFOO0FBQUEsbUJBQWMsS0FBSztBQU05Qjs7Ozs7RUF4QjBCLGdCQUFNIiwiZmlsZSI6IjQuMzhmN2RjOGJkN2RhN2Q4ODM5ZGMuaG90LXVwZGF0ZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBQcmlzbWljIGZyb20gJ3ByaXNtaWMuaW8nXG5pbXBvcnQgeyBEb2N1bWVudEJ5SWQgfSBmcm9tICdyZWFjdC1wcmlzbWljLWhvY3MnXG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXG5cbmltcG9ydCBIZWFkZXIgZnJvbSAnLi4vY29tcG9uZW50cy9oZWFkZXInXG5cbmV4cG9ydCBkZWZhdWx0IGNsYXNzIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgLy8gc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcyAoKSB7XG4gIC8vXG4gIC8vIH1cblxuICBjb25zdHJ1Y3RvciAocHJvcHMpIHtcbiAgICBzdXBlcihwcm9wcylcbiAgfVxuXG4gIHJlbmRlcigpIHtcbiAgICByZXR1cm4gKFxuICAgICAgPERvY3VtZW50QnlJZFxuICAgICAgICB1cmw9eydodHRwczovL3JlYWN0LWNtcy1ib2lsZXJwbGF0ZS5wcmlzbWljLmlvL2FwaSd9XG4gICAgICAgIGlkPXsnaG9tZSd9XG4gICAgICA+XG4gICAgICAgIHsoe2xvYWRpbmcsIHByaXNtaWMsIGVycm9yfSkgPT4gKFxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICB7IWxvYWRpbmcgJiYgcHJpc21pYyAmJlxuICAgICAgICAgICAgICA8ZGl2PntwcmlzbWljLmRhdGFbJ3RpdGxlJ119PC9kaXY+XG4gICAgICAgICAgICB9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICl9XG4gICAgICA8L0RvY3VtZW50QnlJZD5cbiAgICApXG4gIH1cbn1cblxuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyAuL3BhZ2VzP2VudHJ5Il0sInNvdXJjZVJvb3QiOiIifQ==
